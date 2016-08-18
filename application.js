@@ -74,7 +74,7 @@ class NotesApplication{
     if(Math.abs(note_id) < this.notelist.length ){
       delete this.notelist[note_id];
     }else{
-      return "Note Id is Not Valid";
+      console.console.log("Note Id is Not Valid");
     }
   }
 
@@ -87,7 +87,7 @@ class NotesApplication{
     if(Math.abs(note_id) < this.notelist.length  && new_content !== ""){
       this.notelist[note_id] = new_content;
     }else{
-      return "Note Id is Not Valid";
+      console.log( "Note Id is Not Valid");
     }
   }
 
