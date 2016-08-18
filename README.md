@@ -1,6 +1,7 @@
 # Notes Application
 
-## The main class NotesApplication has Method:
+## The main class NotesApplication :
+  Has a constructor that takes in parameter author and save it as an instance variable and also the class contains the following methods
   * create
   * listNote
   * getNoteId
