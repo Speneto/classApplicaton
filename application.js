@@ -3,7 +3,7 @@ class NotesApplication(){
   constructor (author) {
     //validate autor
     this.author = author;
-
+  }
   /**
    * function to take note content and add to notelist object
   */
@@ -27,7 +27,7 @@ class NotesApplication(){
   /**
   *This function takes the note id and return the note content as string
   */
-  get(note_id){
+  getNoteId(note_id){
     if(Math.abs(note_id) < notelist.length ){
       return notelist[note_id];
     }else{
@@ -40,7 +40,7 @@ class NotesApplication(){
 *This function takes in a seach text and returns all note with that text within in
 */
 
-  search(search_text){
+  searchText(search_text){
 
   }
 
@@ -49,7 +49,7 @@ class NotesApplication(){
 *This function delete the note from notelist that has its index passed
 */
 
-  delete(note_id){
+  deleteNote(note_id){
     if(Math.abs(note_id) < notelist.length ){
       delete notelist[note_id];
     }else{
@@ -61,7 +61,7 @@ class NotesApplication(){
 /**
 *This function replace the content of note with new one at note_id
 */
-  edit(note_id, new_content){
+  editNote(note_id, new_content){
     if(Math.abs(note_id) < notelist.length  && new_content != ""){
       notelist[note_id] = new_content;
     }else{
@@ -69,13 +69,4 @@ class NotesApplication(){
     }
   }
 
-
 }
-  *This function takes the note id and return the note content as string
-  */
-  get(note_id){
-      
-  }
-
-}
-
