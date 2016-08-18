@@ -20,7 +20,7 @@ class NotesApplication(){
       console.log('Note Id :' + i );
       console.log(notelist[i]);
     }
-    consol.log('By Author :' + this.author);
+    console.log('By Author :' + this.author);
 
   }
 
@@ -41,6 +41,14 @@ class NotesApplication(){
 */
 
   searchText(search_text){
+    for(var i =0; i < notelist.length; i++ ){
+      if(notelist.indexOf("search_text") >= 0){
+        console.log('Note Id :' + i );
+        console.log(notelist[i]);
+        console.log('By Author :' + this.author);
+      }
+
+    }
 
   }
 
